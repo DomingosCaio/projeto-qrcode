@@ -1,0 +1,21 @@
+{
+  "name": "projeto-qrcode",
+  "version": "1.0.0",
+  "description": "Utilidades para e-commerces",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DomingosCaio/projeto-qrcode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DomingosCaio/projeto-qrcode/issues"
+  },
+  "homepage": "https://github.com/DomingosCaio/projeto-qrcode#readme"
+}
