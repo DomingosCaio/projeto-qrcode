@@ -1,12 +1,15 @@
+import chalk from "chalk";
+
 const mainPrompt = [
-    {
-        name:"select",
-        description:"Escolha a ferramenta (1 - QRCODE ou 2 - PASSWORD)",
-        pattern: /^[1-2]+$/,
-        message: "Escolha apenas entre 1 e 2",
-        required: true
+  {
+    name: "select",
+    description: chalk.cyan(
+      "Escolha a ferramenta (1 - QRCODE ou (2 - PASSWORD \n"
+    ),
+    pattern: /^[1-2]+$/,
+    message: chalk.red("Escolha apenas entre 1 e 2"),
+    required: true,
+  },
+];
 
-    }
-]
-
-export default mainPrompt
+export default mainPrompt;
