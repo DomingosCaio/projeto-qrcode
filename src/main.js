@@ -1,14 +1,16 @@
 import prompt from "prompt";
-import chalk from "chalk";
 
-import mainPrompt from "./prompts/prompt-main.js";
+import promptSchemaMain from "./prompts-schema/schema-main.js";
 import createQRCode from "./services/qr-code/create.js";
+import createPassword from "./services/password/create.js";
 
 async function main() {
-  prompt.get(mainPrompt, async (err, result) => {
+  prompt.get(promptSchemaMain, async (err, result) => {
+    if (err) console.log(err);
+
     if (result.select == 1) await createQRCode();
 
-    if (result.select == 2) console.log(chalk.green("escolheu o password"));
+    if (result.select == 2) await createPassword();
   });
 
   prompt.start();

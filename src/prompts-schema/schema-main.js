@@ -1,6 +1,6 @@
 import chalk from "chalk";
 
-const mainPrompt = [
+const promptSchemaMain = [
   {
     name: "select",
     description: chalk.cyan(
@@ -12,4 +12,4 @@ const mainPrompt = [
   },
 ];
 
-export default mainPrompt;
+export default promptSchemaMain;
